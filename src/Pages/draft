@@ -2,7 +2,8 @@ import '../Styles/page.css';
 import { useState } from "react";
 import noimage from '../Assets/noimage.png'
 import axios from "axios";
-import SecondLayout from "../Layouts/SecondLayout";
+
+
 
 export default function AddNewRecipePage() {
   const spaceID = process.env.REACT_APP_SPACE_ID;
