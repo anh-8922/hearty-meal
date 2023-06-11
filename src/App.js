@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import SearchContextFunction from './Context/SearchContext';
+import Home from './Pages/Home';
+import WelcomePage from "./Pages/Welcome";
+import RecipePage from "./Pages/Recipe";
+import About from "./Pages/About";
+//import Contact from "./Pages/Contact";
+import SearchPage from "./Pages/SearchPage";
+import AddNewRecipePage from "./Pages/AddNewRecipePage";
+import SingleRecipePage from "./Pages/SingleRecipePage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+        <SearchContextFunction>
+          <Routes>
+            <Route exact path="/" element={<WelcomePage/>}/>
+            <Route path="/home" element={<Home/>}/>
+            <Route path="/recipe" element={<RecipePage/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path= '/addnewrecipes' element = {<AddNewRecipePage/>} />
+            <Route path="/search" element={<SearchPage/>}/>
+            
+            <Route path="/singlerecipepage/:id" element={<SingleRecipePage/>} />
+            
+          </Routes>
+        </SearchContextFunction>
+      </BrowserRouter>
   );
 }
-
+  
 export default App;
+
+//
+//<Route path="/contact" element={<Contact/>}/>
