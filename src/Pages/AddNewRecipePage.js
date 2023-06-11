@@ -1,5 +1,6 @@
 import { createClient } from 'contentful-management';
 import React, { useState } from 'react';
+import SecondLayout from '../Layouts/SecondLayout';
 
 // get your contentful space id and content delivery access token from your contentful space settings.
 const contentfulClient = createClient({
@@ -11,6 +12,7 @@ const spaceID = process.env.REACT_APP_SPACE_ID;
 export default function AddNewRecipePage() {
   const [title, setTitle] = useState('');
   const [instructions, setInstructions] = useState('');
+  const [category, setCategory] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,6 +28,9 @@ export default function AddNewRecipePage() {
           instructions: {
             'en-US': instructions,
           },
+          category: {
+            'en-US': category,
+          },
           // add other fields as needed
         },
       });
@@ -39,8 +44,9 @@ export default function AddNewRecipePage() {
   };
 
   return (
-    <>
+    <SecondLayout>
       <form onSubmit={handleSubmit}>
+        <label>Add your recipe title:</label>
         <input
           type="text"
           id="title"
@@ -48,6 +54,7 @@ export default function AddNewRecipePage() {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
+        <label>Add your Ingredients and Instructions:</label>
         <input
           type="text"
           id="instructions"
@@ -55,9 +62,19 @@ export default function AddNewRecipePage() {
           value={instructions}
           onChange={(e) => setInstructions(e.target.value)}
         />
+        <label>Category: </label>
+        <select
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
+        >
+          <option value="">Select a category</option>
+          <option value="Breakfast">Breakfast</option>
+          <option value="Lunch">Lunch</option>
+          {/* Add more options as needed */}
+        </select>
         <button type="submit">Submit</button>
       </form>
-    </>
+    </SecondLayout>
   );
 }
 

@@ -20,7 +20,7 @@ export default function Sidebar() {
                 <NavLink to='/search'  id="search"><SearchBar/></NavLink>                                                                        
                 <NavLink to="/home"  className='nav-items'><RiHomeSmileLine/>Main Board</NavLink>
                 <NavLink to="/recipe" className="nav-items"><GiSecretBook/>Recipe</NavLink>
-                
+                <NavLink to='/addnewrecipes'  className="nav-items"><RiAddBoxFill/>Add Recipe</NavLink>
                 <NavLink   className="nav-items"><RiMentalHealthFill/>Tools</NavLink>   
                 <NavLink to="/about" className="nav-items"><RiFileInfoFill/>About</NavLink>
                 <NavLink to="/contact"  className="nav-items"><RiMailSendFill/>Contact</NavLink>   
@@ -29,4 +29,4 @@ export default function Sidebar() {
     )
 }
 
-//<NavLink to='/addnewrecipes'  className="nav-items"><RiAddBoxFill/>Add Recipe</NavLink>
+//
