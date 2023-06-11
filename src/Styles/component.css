@@ -1,0 +1,187 @@
+:root {
+    --orange-like-carrot: #E53F03;
+    --sweet-like-vanilla: #D4C79E;
+    --dark-is-coffee: #4E352B;
+    --raisen-black: #231F20;
+  }
+
+nav {
+    background-color: var(--orange-like-carrot);
+    height: 110dvh;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    border-right: 5px solid #b1978c;
+    border-right-style: groove;
+    
+}
+
+nav a.active {
+    font-weight: bold;
+    background-color: var(--sweet-like-vanilla);
+    font-style: italic;
+    border: 2px solid #D4C79E;
+    border-style: groove;
+}
+.nav-items {
+    
+    margin: 0.5rem 2rem 0 2rem;
+    padding: 0.7rem 1rem 0.7rem 1rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    text-decoration: none;
+    color: var(--raisen-black);
+    background-color: whitesmoke;
+}
+
+#logo {
+    background-color: whitesmoke;
+    border-radius: 50%;
+    width: max-content;
+    display: flex;
+    align-self: center;
+    margin: 1rem 0;
+    border: 4px solid #4E352B;
+    border-style: inset;
+}
+
+/*LOGIN COMPONENT*/
+#login-button {
+    background-color: var(--orange-like-carrot);
+    border: 4px solid #b1978c;
+    border-style: groove;
+    font-size: 1.2rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    font-weight: bold;
+}
+#login-button:hover {
+    background-color: var(--sweet-like-vanilla);
+    color: var(--dark-is-coffee);
+    border: 4px solid #b1978c;
+    border-style: inset;
+}
+
+/*CAROUSEL COMPONENT*/
+.carousel {
+    background-color: aqua;
+    overflow: hidden;
+    width: 80%;
+    margin-right: 3rem;
+}
+.carousel-items {
+    height: 27rem;
+    min-width: 100%;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    background-color: yellow;
+    
+}
+.internal-organ {
+    white-space: nowrap;
+    transition: transform 0.3s;
+}
+.indicator {
+    display: flex;
+    justify-content: center;
+}
+.indicator > button {
+    margin: 0.5rem
+}
+
+/*RECIPE TABS COMPONENTS*/
+.recipe-tab {
+    width: 60rem;
+    height: fit-content;
+    background-color: var(--sweet-like-vanilla);
+    margin-right: 3rem;
+    border-radius: 0.7rem;
+}
+
+/*SEARCH BAR COMPONENTS*/
+.SearchInput {
+    background-color: whitesmoke;
+    width: 11.5rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    height: 3rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 4px;
+    
+}
+.SearchInput > input {
+    background: none;
+    border: none;
+    width: 8rem;
+}
+
+.SearchInput > button {
+    background: none;
+    border: none;
+}
+#search.active {
+    border: none;
+    background: none;
+}
+
+/*SUMMARY CARD COMPONENTS*/
+.summary-card{
+    background-color: whitesmoke;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0 
+}
+#category-img {
+    width: 100%;
+    height: 7rem;
+    border-radius: 0.3rem;
+}
+.category-items {
+    color: var(--raisen-black);
+    font-weight: bold;
+    width: 11rem;
+    height: max-content;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    
+}
+.category-items > p {
+    height: 2rem;
+}
+.category-items > button {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    background-color: var(--dark-is-coffee);
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+.category-items > button {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    background-color: var(--dark-is-coffee);
+    color: whitesmoke;
+    border-radius: 5px;
+}
+.category-items > button:hover {
+    font-weight: bold;
+    background-color: var(--sweet-like-vanilla);
+    color: var(--dark-is-coffee);
+}
+
+/*ITEM CARD COMPONENTS*/
+/* Changed background color/ padding /z index ====> LAKMALI */
+.item-card {
+    
+}
+.item-card > h1 {
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+}
+.group-1 {
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 2rem;
+}
