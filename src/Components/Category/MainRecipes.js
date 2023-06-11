@@ -3,6 +3,7 @@ import useFetchCards from "../../CustomHook/FetchData";
 import SummaryCard from "../SummaryCard";
 import Spinner from "../Spinner";
 import { useNavigate } from "react-router-dom";
+import "./category.css";
 
 export default function MainRecipes() {
   const { itemCard, isItemLoading } = useFetchCards();
@@ -21,7 +22,7 @@ export default function MainRecipes() {
   );
 
   return (
-    <div style={{display:'flex', gap:'2rem', flexWrap:'wrap'}}>
+    <div className="category-group">
       {mainCard.map((item) => {
         const { id, itemImage, itemTitle } = item;
         return (

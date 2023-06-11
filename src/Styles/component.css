@@ -7,10 +7,12 @@
 
 nav {
     background-color: var(--orange-like-carrot);
-    height: auto;
-    width: 20%;
+    height: 110dvh;
+    width: 23%;
     display: flex;
     flex-direction: column;
+    border-right: 5px solid #b1978c;
+    border-right-style: groove;
     
 }
 
@@ -91,16 +93,17 @@ nav a.active {
 
 /*RECIPE TABS COMPONENTS*/
 .recipe-tab {
-    width: 55rem;
-    height: 32rem;
+    width: 60rem;
+    height: fit-content;
     background-color: var(--sweet-like-vanilla);
     margin-right: 3rem;
+    border-radius: 0.7rem;
 }
 
 /*SEARCH BAR COMPONENTS*/
 .SearchInput {
     background-color: whitesmoke;
-    width: 10.3rem;
+    width: 11.5rem;
     display: flex;
     flex-direction: row;
     margin-left: 2rem;
@@ -114,45 +117,64 @@ nav a.active {
     border: none;
     width: 8rem;
 }
+
 .SearchInput > button {
     background: none;
     border: none;
 }
 #search.active {
-    border: none
+    border: none;
+    background: none;
 }
 
 /*SUMMARY CARD COMPONENTS*/
+.summary-card{
+    background-color: whitesmoke;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0 
+}
 #category-img {
-    width: 11rem;
-    height: 8rem;
+    width: 100%;
+    height: 7rem;
     border-radius: 0.3rem;
 }
 .category-items {
     color: var(--raisen-black);
     font-weight: bold;
     width: 11rem;
-    height: 11rem;
+    height: max-content;
     margin: 0.5rem 1rem 0.5rem 1rem;
     
 }
-.category-items ~ button {
+.category-items > p {
+    height: 2rem;
+}
+.category-items > button {
     padding: 0.3rem;
     font-size: 0.8rem;
-    margin-left: 1rem;
     background-color: var(--dark-is-coffee);
     color: whitesmoke;
+    border-radius: 5px;
+}
+
+.category-items > button {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    background-color: var(--dark-is-coffee);
+    color: whitesmoke;
+    border-radius: 5px;
+}
+.category-items > button:hover {
+    font-weight: bold;
+    background-color: var(--sweet-like-vanilla);
+    color: var(--dark-is-coffee);
 }
 
 /*ITEM CARD COMPONENTS*/
 /* Changed background color/ padding /z index ====> LAKMALI */
 .item-card {
-    margin: 2rem 5rem 2rem 4rem;
-    background-color: #D4C79E;
     
-    border-radius: 2rem;
-    width:60vw;
-    /* z-index: 1000; */
 }
 .item-card > h1 {
     margin-bottom: 2rem;
