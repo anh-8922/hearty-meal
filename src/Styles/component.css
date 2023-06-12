@@ -45,23 +45,64 @@ nav a.active {
 }
 
 /*LOGIN COMPONENT*/
-#login-button {
-    background-color: var(--orange-like-carrot);
-    border: 4px solid #b1978c;
-    border-style: groove;
-    font-size: 1.2rem;
-    width: 8rem;
-    display: flex;
-    justify-content: center;
-    align-self: flex-end;
-    font-weight: bold;
-}
-#login-button:hover {
-    background-color: var(--sweet-like-vanilla);
-    color: var(--dark-is-coffee);
-    border: 4px solid #b1978c;
-    border-style: inset;
-}
+.login-button {
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    font-family: Trebuchet MS;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 0.5rem 1rem;
+    background-color: #38AA5E;
+    -webkit-box-shadow: 1px 1px 20px 0 #000000;
+    -moz-box-shadow: 1px 1px 20px 0 #000000;
+    box-shadow: 1px 1px 20px 0 #000000;
+    border: groove #A28769 5px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .login-button:hover {
+    background: #A28769;
+    border: ridge #99C624 5px;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+ }
+ .user-button {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: Trebuchet MS;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 0.5rem 1rem;
+    background-color: #D6570F;
+    -webkit-box-shadow: 1px 1px 10px 0 #000000;
+    -moz-box-shadow: 1px 1px 10px 0 #000000;
+    box-shadow: 1px 1px 10px 0 #000000;
+    border: inset #D6570F 2px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 1rem;
+ }
+ 
+ .user-button:hover {
+    background: #A28769;
+    border: outset #918883 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+ }
+
 
 /*CAROUSEL COMPONENT*/
 .carousel {
