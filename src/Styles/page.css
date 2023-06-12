@@ -116,10 +116,24 @@ ROUTE: '/home'
 .AddNewRecipe {
     background-color: whitesmoke;
     width: 100%;
-    height: 100vh;
+    height: 85vh;
+    margin: 0 3rem;
+    border-radius: 1rem;
 }
-.AddRecipeBox {
-    margin: 3rem 2rem 3rem 10rem; 
+.AddNewRecipe > form {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 /* SEARCH PAGE |ROTE: "/search/..... */
+
+/* USER PAGE |ROTE: "/user/..... */
+
+.UserPage {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 85vh;
+    margin: 0 3rem;
+    border-radius: 1rem;
+}
