@@ -7,7 +7,7 @@ import MainLayout from "../Layouts/MainLayout";
 export default function UserPage() {
   return(
     <MainLayout>
-      <div>test</div>
+      <div className="UserPage">test</div>
     </MainLayout>
   )
   

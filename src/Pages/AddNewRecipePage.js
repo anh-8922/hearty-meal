@@ -45,35 +45,37 @@ export default function AddNewRecipePage() {
 
   return (
     <MainLayout>
-      <form onSubmit={handleSubmit}>
-        <label>Add your recipe title:</label>
-        <input
-          type="text"
-          id="title"
-          placeholder="Title"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
-        <label>Add your Ingredients and Instructions:</label>
-        <input
-          type="text"
-          id="instructions"
-          placeholder="Instructions"
-          value={instructions}
-          onChange={(e) => setInstructions(e.target.value)}
-        />
-        <label>Category: </label>
-        <select
-          value={category}
-          onChange={(e) => setCategory(e.target.value)}
-        >
-          <option value="">Select a category</option>
-          <option value="Breakfast">Breakfast</option>
-          <option value="Lunch">Lunch</option>
-          {/* Add more options as needed */}
-        </select>
-        <button type="submit">Submit</button>
-      </form>
+      <div className='AddNewRecipe'>
+        <form onSubmit={handleSubmit}>
+          <label>Add your recipe title:</label>
+          <input
+            type="text"
+            id="title"
+            placeholder="Title"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
+          <label>Add your Ingredients and Instructions:</label>
+          <textarea
+            type="text"
+            id="instructions"
+            placeholder="Instructions"
+            value={instructions}
+            onChange={(e) => setInstructions(e.target.value)}
+          />
+          <label>Category: </label>
+          <select
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+          >
+            <option value="">Select a category</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            {/* Add more options as needed */}
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </MainLayout>
   );
 }
