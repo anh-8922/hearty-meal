@@ -46,35 +46,33 @@ export default function SearchPage() {
   return (
     <MainLayout>
         <div>
-          {isItemLoading ? (
-            <div>
-              <Spinner />
-            </div>
-          ) : (
-            <div style={{display:'flex',
-                         flexDirection:'column',
-                         justifyContent:'center',
-                         alignItems:'center'}}>
-              {itemCard.map((item, index) => {
-                const {fields } = item;
-                const itemTitle = fields?.title || '';
-                const itemInstructions = fields?.instructions || '';
-                const itemIngredients = fields?.ingredients || '';
-                const itemImage = fields?.image?.fields?.file?.url || '';
-            
-                return (
-                  <ItemCard
-                    key={index}
-                    itemTitle={itemTitle}
-                    itemImage={itemImage}
-                    itemIngredients={itemIngredients}
-                    itemInstructions={itemInstructions}
-                  />
-                );
-              })}
-            </div>
-          )}
+      {isItemLoading ? (
+        <div>
+          <Spinner />
         </div>
+      ) : (
+        <div>
+          {itemCard.map((item, index) => {
+            const {fields } = item;
+            const itemTitle = fields?.title || '';
+            const itemInstructions = fields?.instructions || '';
+            const itemIngredients = fields?.ingredients || '';
+            const itemImage = fields?.image?.fields?.file?.url || '';
+
+            return (
+              <ItemCard
+                key={index}
+                itemTitle={itemTitle}
+                itemImage={itemImage}
+                itemIngredients={itemIngredients}
+                itemInstructions={itemInstructions}
+              />
+            );
+          })}
+        </div>
+      )}
+    </div>
     </MainLayout>
+    
   );
 }

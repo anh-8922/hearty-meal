@@ -9,12 +9,13 @@
     width: 100%;
     height: 100vh;
 }
-.top {
+.heading {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    margin: 2rem 3rem 1.5rem 0;
+    justify-content: space-between;
+    margin: 1.5rem 4rem;
 }
+
 .content {
     display: flex;
     justify-content: flex-end;

@@ -31,13 +31,13 @@ export default function Login () {
         <>
             
             {!isAuth ? (
-            <button className="login-with-google-btn" onClick={signInWithGoogle}>Login</button>
+            <button className="login-button" onClick={signInWithGoogle}>Login</button>
 //<Link to="/login" id="login-button"> Login </Link>
             ) : (
             <>
-                <Link to="/addnewrecipes"><button>Add new recipe</button></Link>
-                <Link to="/user"><button>My kitchen</button></Link>
-                <button onClick={signUserOut}> Log Out</button>
+                <Link to="/addnewrecipes"><button className="user-button">Add new recipe</button></Link>
+                <Link to="/user"><button className="user-button">My kitchen</button></Link>
+                <button onClick={signUserOut} className="login-button"> Log Out</button>
             </>
             )}
             <Routes>

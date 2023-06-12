@@ -1,6 +1,6 @@
 import { createClient } from 'contentful-management';
 import React, { useState } from 'react';
-import SecondLayout from '../Layouts/SecondLayout';
+import MainLayout from '../Layouts/MainLayout';
 
 // get your contentful space id and content delivery access token from your contentful space settings.
 const contentfulClient = createClient({
@@ -44,7 +44,7 @@ export default function AddNewRecipePage() {
   };
 
   return (
-    <SecondLayout>
+    <MainLayout>
       <form onSubmit={handleSubmit}>
         <label>Add your recipe title:</label>
         <input
@@ -74,7 +74,7 @@ export default function AddNewRecipePage() {
         </select>
         <button type="submit">Submit</button>
       </form>
-    </SecondLayout>
+    </MainLayout>
   );
 }
 

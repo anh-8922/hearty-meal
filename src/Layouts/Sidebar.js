@@ -8,7 +8,7 @@ import {RiAddBoxFill} from 'react-icons/ri';
 import {RiMentalHealthFill} from 'react-icons/ri';
 import {RiFileInfoFill} from 'react-icons/ri';
 import {RiMailSendFill} from 'react-icons/ri';
-import SearchBar from "../Components/SearchBar";
+//import SearchBar from "../Components/SearchBar";
 import heartlogo from '../Assets/heartlogo.png'
 
 export default function Sidebar() {
@@ -17,7 +17,7 @@ export default function Sidebar() {
         <>
             <nav >
                 <div id="logo"><img style={{width: '10rem' }} src={heartlogo} alt='logo'/></div>
-                <NavLink to='/search'  id="search"><SearchBar/></NavLink>                                                                        
+                                                                                        
                 <NavLink to="/home"  className='nav-items'><RiHomeSmileLine/>Main Board</NavLink>
                 <NavLink to="/recipe" className="nav-items"><GiSecretBook/>Recipe</NavLink>
                 

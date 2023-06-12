@@ -1,5 +1,5 @@
 import ItemCard from "../Components/ItemCard";
-import SecondLayout from "../Layouts/SecondLayout";
+import MainLayout from "../Layouts/MainLayout";
 import { Link, useParams } from "react-router-dom";
 import Spinner from "../Components/Spinner";
 import useFetchCards from "../CustomHook/FetchData";
@@ -22,7 +22,7 @@ export default function SingleRecipePage() {
   const { itemImage, itemIngredients, itemInstructions, itemTitle } = selectedRecipe;
 
   return (
-    <SecondLayout>
+    <MainLayout>
       <div className="single-page">
         <ItemCard
           itemTitle={itemTitle}
@@ -39,6 +39,6 @@ export default function SingleRecipePage() {
                         borderRadius:'0.5rem'}}>Back to Recipes</button>
         </Link>
       </div>
-    </SecondLayout>
+    </MainLayout>
   );
 }
