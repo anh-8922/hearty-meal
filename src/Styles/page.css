@@ -136,4 +136,22 @@ ROUTE: '/home'
     height: 85vh;
     margin: 0 3rem;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.my-recipes {
+    
+    width: 50%;
+    margin: 1rem;
+    border-right: 2px solid black;
+}
+
+/* TOOLS |ROTE: "/tools */
+.tools {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 85vh;
+    margin: 0 3rem;
+    border-radius: 1rem;
 }

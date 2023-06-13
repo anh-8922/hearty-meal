@@ -1,3 +1,6 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
 :root {
     --orange-like-carrot: #E53F03;
     --sweet-like-vanilla: #D4C79E;
@@ -17,17 +20,16 @@ nav {
 }
 
 nav a.active {
-    font-weight: bold;
     background-color: var(--sweet-like-vanilla);
-    font-style: italic;
     border: 2px solid #D4C79E;
     border-style: groove;
 }
 .nav-items {
-    
+    font-family: 'Lilita One', cursive;
+    font-size: 1.3rem;
     margin: 0.5rem 2rem 0 2rem;
     padding: 0.7rem 1rem 0.7rem 1rem;
-    border-radius: 0 0.5rem 0.5rem 0;
+    border-radius: 0.5rem;
     text-decoration: none;
     color: var(--raisen-black);
     background-color: whitesmoke;

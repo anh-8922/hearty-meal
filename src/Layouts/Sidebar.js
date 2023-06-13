@@ -21,7 +21,7 @@ export default function Sidebar() {
                 <NavLink to="/home"  className='nav-items'><RiHomeSmileLine/>Main Board</NavLink>
                 <NavLink to="/recipe" className="nav-items"><GiSecretBook/>Recipe</NavLink>
                 
-                <NavLink   className="nav-items"><RiMentalHealthFill/>Tools</NavLink>   
+                <NavLink to='/tools'  className="nav-items"><RiMentalHealthFill/>Tools</NavLink>   
                 <NavLink to="/about" className="nav-items"><RiFileInfoFill/>About</NavLink>
                 <NavLink to="/contact"  className="nav-items"><RiMailSendFill/>Contact</NavLink>   
             </nav>
