@@ -14,6 +14,7 @@ import { signOut } from "firebase/auth";
 import { auth } from "./firebase-config";
 import Login from "./Components/Login";
 import UserPage from "./Pages/UserPage";
+import Tools from "./Pages/Tools";
 
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -35,7 +36,7 @@ function App() {
             <Route path="/about" element={<About/>}/>
             <Route path= '/addnewrecipes' element = {<AddNewRecipePage/>} />
             <Route path="/search" element={<SearchPage/>}/>
-            
+            <Route path='/tools' element={<Tools/>}/>
             <Route path="/singlerecipepage/:id" element={<SingleRecipePage/>} />
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/login" element={<Login/>}/>
