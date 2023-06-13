@@ -30,8 +30,8 @@ function App() {
         <SearchContextFunction>
           <Routes>
             <Route exact path="/" element={<WelcomePage/>}/>
-            <Route path="/home" element={<Home/>}/>
-            <Route path="/recipe" element={<RecipePage/>}/>
+            <Route path="/home/*" element={<Home/>}/>
+            <Route path="/recipe/*" element={<RecipePage/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path= '/addnewrecipes' element = {<AddNewRecipePage/>} />
             <Route path="/search" element={<SearchPage/>}/>
