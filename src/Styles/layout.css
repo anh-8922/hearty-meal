@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 1.5rem 4rem;
+    margin: 0.7rem 4rem 1rem 4rem;
 }
 
 .content {
