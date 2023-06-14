@@ -65,11 +65,14 @@ ROUTE: '/home'
 
 /*ABOUT PAGE | ROUTE: "/about"*/
 #about {
- width: 60rem;
- background-color: whitesmoke;
- margin-right: 3rem;
- border-radius: 1rem;
- padding: 1rem
+    width: 60rem;
+    background-color: whitesmoke;
+    margin-right: 3rem;
+    padding: 1rem;
+    border-width: 5px 3px 3px 5px;
+    border-radius:2% 6% 5% 4% / 1% 1% 2% 4%;
+    border: 4px solid black;
+    
 }
 
 /*CONTACT PAGE | ROUTE: "/contact"*/
@@ -77,8 +80,10 @@ ROUTE: '/home'
     width: 60rem;
     background-color: whitesmoke;
     margin-right: 3rem;
-    border-radius: 1rem;
     padding: 1rem;
+    border-width: 5px 3px 3px 5px;
+    border-radius:2% 6% 5% 4% / 1% 1% 2% 4%;
+    border: 4px solid black;
    }
 .contact-form > form {
     display: flex; 
@@ -153,5 +158,8 @@ ROUTE: '/home'
     width: 100%;
     height: 85vh;
     margin: 0 3rem;
-    border-radius: 1rem;
+    border-width: 5px 3px 3px 5px;
+    border-radius:2% 6% 5% 4% / 1% 1% 2% 4%;
+    border: 4px solid black;
+    padding: 1rem;
 }

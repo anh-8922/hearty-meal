@@ -24,7 +24,7 @@ nav a.active {
     border: 2px solid #D4C79E;
     border-style: groove;
 }
-.nav-items {
+/*.nav-items {
     font-family: 'Lilita One', cursive;
     font-size: 1.3rem;
     margin: 0.5rem 2rem 0 2rem;
@@ -33,7 +33,36 @@ nav a.active {
     text-decoration: none;
     color: var(--raisen-black);
     background-color: whitesmoke;
+}*/
+.nav-items {
+    font-family: 'Lilita One', cursive;
+    padding: 1rem;
+    margin: 0.5rem 2rem 0 2rem;
+    display: inline-block;
+    border: 3px solid #333333;
+    font-size: 1rem;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    background: whitesmoke;
+    position: relative;
+    text-decoration: none;
+    color: var(--raisen-black);
+    
+    &::before {
+        content: '';
+        border: 2px solid #353535;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+        border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    }
 }
+
 
 #logo {
     background-color: whitesmoke;
@@ -50,7 +79,7 @@ nav a.active {
 .login-button {
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
-    border-radius: 1rem;
+    
     color: #FFFFFF;
     font-family: Trebuchet MS;
     font-size: 1rem;
@@ -60,51 +89,38 @@ nav a.active {
     -webkit-box-shadow: 1px 1px 20px 0 #000000;
     -moz-box-shadow: 1px 1px 20px 0 #000000;
     box-shadow: 1px 1px 20px 0 #000000;
-    border: groove #A28769 5px;
+    border-color:  whitesmoke;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     text-align: center;
+    border-width: 5px 3px 3px 5px;
+    border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    transform: rotate(2deg);
  }
  
  .login-button:hover {
     background: #A28769;
-    border: ridge #99C624 5px;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    border-radius: 1rem;
-    text-decoration: none;
+    border-width: 3px 5px 5px 3px;
  }
- .user-button {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+
+.user-button {
+    background-color: #D6570F;
     color: #FFFFFF;
     font-family: Trebuchet MS;
     font-size: 1rem;
     font-weight: 100;
     padding: 0.5rem 1rem;
-    background-color: #D6570F;
-    -webkit-box-shadow: 1px 1px 10px 0 #000000;
-    -moz-box-shadow: 1px 1px 10px 0 #000000;
-    box-shadow: 1px 1px 10px 0 #000000;
-    border: inset #D6570F 2px;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-    margin-right: 1rem;
- }
- 
- .user-button:hover {
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+    transform: rotate(-2deg);
+    margin: 1rem;
+    border-color: whitesmoke;
+}
+.user-button:hover {
     background: #A28769;
-    border: outset #918883 2px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    text-decoration: none;
+    border-width: 5px 5px 3px 3px;
  }
-
 
 /*CAROUSEL COMPONENT*/
 .carousel {
@@ -140,7 +156,21 @@ nav a.active {
     height: fit-content;
     background-color: var(--sweet-like-vanilla);
     margin-right: 3rem;
-    border-radius: 0.7rem;
+    border-color: var(--raisen-black);
+    border-width: 1rem 1.5rem 1rem 2rem;
+    display: inline-block;
+    border: 3px solid #353535;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    letter-spacing: 0.3ch;
+    position: relative;
+    -webkit-box-shadow: 1px 1px 20px 0 #6e6e6e;
+    -moz-box-shadow: 1px 1px 20px 0 #6e6e6e;
+    box-shadow: 1px 1px 20px 0 #6e6e6e;
+    padding: 0.5rem 0;
+    
+    
+ 
+    
 }
 
 /*SEARCH BAR COMPONENTS*/
