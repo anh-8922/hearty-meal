@@ -127,6 +127,7 @@ ROUTE: '/home'
     height: fit-content;
     background-color: #D4C79E;
     margin: 2rem;
+    margin-left: 8rem;
     border-radius: 1rem;
     padding-bottom: 2rem;
     
@@ -140,6 +141,7 @@ ROUTE: '/home'
     width: 100%;
     height: 85vh;
     margin: 0 3rem;
+    margin-left: 8rem;
     border-radius: 1rem;
 }
 .AddNewRecipe > form {
@@ -150,13 +152,14 @@ ROUTE: '/home'
 
 /* SEARCH PAGE |ROTE: "/search/..... */
 
+
 /* USER PAGE |ROTE: "/user/..... */
 
 .UserPage {
     background-color: whitesmoke;
     width: 100%;
     height: 85vh;
-    margin: 0 3rem;
+    margin: 0 8rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: row;
@@ -175,6 +178,7 @@ ROUTE: '/home'
     width: 100%;
     height: 85vh;
     margin: 0 3rem;
+    margin-left: 8rem;
     border-width: 5px 3px 3px 5px;
     border-radius:2% 6% 5% 4% / 1% 1% 2% 4%;
     border: 4px solid black;

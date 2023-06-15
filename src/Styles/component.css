@@ -8,6 +8,8 @@
     --raisen-black: #231F20;
   }
 
+
+
 nav {
     background-color: var(--orange-like-carrot);
     height: 100vh;
@@ -18,23 +20,14 @@ nav {
     border-right-style: groove;
     position: fixed; 
     overflow-y: auto;
-}
+  }
 
 nav a.active {
     background-color: var(--sweet-like-vanilla);
     border: 2px solid #D4C79E;
     border-style: groove;
 }
-/*.nav-items {
-    font-family: 'Lilita One', cursive;
-    font-size: 1.3rem;
-    margin: 0.5rem 2rem 0 2rem;
-    padding: 0.7rem 1rem 0.7rem 1rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    color: var(--raisen-black);
-    background-color: whitesmoke;
-}*/
+
 .nav-items {
     font-family: 'Lilita One', cursive;
     padding: 1rem;
@@ -236,9 +229,10 @@ nav a.active {
 }
 
 /*ITEM CARD COMPONENTS*/
-/* Changed background color/ padding /z index ====> LAKMALI */
+/* Changed background color/ padding / ====> LAKMALI */
 .item-card {
-    
+    background-color: #D4C79E;
+    border-radius: 1rem;
 }
 .item-card > h1 {
     margin-bottom: 2rem;
