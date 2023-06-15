@@ -15,6 +15,7 @@ import { auth } from "./firebase-config";
 import Login from "./Components/Login";
 import UserPage from "./Pages/UserPage";
 import Tools from "./Pages/Tools";
+import './App.css';
 
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <div className="background-container">
         <SearchContextFunction>
           <Routes>
             <Route exact path="/" element={<WelcomePage/>}/>
@@ -43,7 +45,8 @@ function App() {
             <Route path="/user" element={<UserPage/>}/>
           </Routes>
         </SearchContextFunction>
-      </BrowserRouter>
+      </div>
+    </BrowserRouter>
   );
 }
   
