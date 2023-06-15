@@ -8,16 +8,7 @@
     --raisen-black: #231F20;
   }
 
-/* nav {
-    background-color: var(--orange-like-carrot);
-    height: 110dvh;
-    width: 23%;
-    display: flex;
-    flex-direction: column;
-    border-right: 5px solid #b1978c;
-    border-right-style: groove;
-    
-} */
+
 
 nav {
     background-color: var(--orange-like-carrot);
@@ -30,23 +21,13 @@ nav {
     position: fixed; 
     overflow-y: auto;
   }
-  
 
 nav a.active {
     background-color: var(--sweet-like-vanilla);
     border: 2px solid #D4C79E;
     border-style: groove;
 }
-/*.nav-items {
-    font-family: 'Lilita One', cursive;
-    font-size: 1.3rem;
-    margin: 0.5rem 2rem 0 2rem;
-    padding: 0.7rem 1rem 0.7rem 1rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    color: var(--raisen-black);
-    background-color: whitesmoke;
-}*/
+
 .nav-items {
     font-family: 'Lilita One', cursive;
     padding: 1rem;
@@ -136,31 +117,21 @@ nav a.active {
  }
 
 /*CAROUSEL COMPONENT*/
-.carousel {
-    background-color: aqua;
-    overflow: hidden;
-    width: 80%;
-    margin-right: 3rem;
-}
-.carousel-items {
-    height: 27rem;
-    min-width: 100%;
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-    background-color: yellow;
+.kitchen-carousel {
+    margin: 1rem 2rem 0 0;
+    padding: 1rem;
+    background: whitesmoke;
+    border-width: 5px 3px 3px 5px;
+    border-radius:2% 6% 5% 4% / 1% 1% 2% 4%;
     
 }
-.internal-organ {
-    white-space: nowrap;
-    transition: transform 0.3s;
+#carousel-item {
+   border-radius: 1rem;
 }
-.indicator {
-    display: flex;
-    justify-content: center;
-}
-.indicator > button {
-    margin: 0.5rem
+#carousel-img {
+   width: 50rem;
+   height: 30rem;
+   border-radius: 1rem;
 }
 
 /*RECIPE TABS COMPONENTS*/

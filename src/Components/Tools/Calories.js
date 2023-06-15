@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import './tools.css'
 const proteinCalorieData = {
   fish: 206,
   chicken: 239,
@@ -71,9 +71,10 @@ export default function CaloriesSelector() {
     
 
     return(
-        <>
-            <h1>Calories Selector</h1>
-            <div>
+        <div className="calories">
+            
+            <div className="foodOption">
+                <h1>Calories Selector</h1>
                 <label htmlFor="food">Select a food:</label>
                 <select id="food" value={food} onChange={handleFoodChange}>
                     <option value="">-- Select --</option>
@@ -100,7 +101,7 @@ export default function CaloriesSelector() {
                 />
                 <button onClick={addFood}>Add Food</button>
             </div>
-            <div>
+            <div className="selectedFood">
                 <h2>Selected Foods</h2>
                 <ul>
                 {selectedFoods.map((item, index) => (
@@ -115,7 +116,7 @@ export default function CaloriesSelector() {
                 </button>
                 <p>Total Calories: {totalCalories}</p>
             </div>
-        </>
+        </div>
     )     
 
 }

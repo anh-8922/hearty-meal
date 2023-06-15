@@ -24,12 +24,6 @@ export default function Tools() {
                 <Tab eventKey="profile" title="Calories Calculator">
                     <CaloriesSelector/>
                 </Tab>
-                <Tab eventKey="longer-tab" title="Loooonger Tab">
-                    Tab content for Loooonger Tab
-                </Tab>
-                <Tab eventKey="contact" title="Contact" disabled>
-                    Tab content for Contact
-                </Tab>
             </Tabs>
         </div>
     </MainLayout>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './tools.css';
 
 export default function Converter() {
   const initialState = {
@@ -76,13 +77,15 @@ export default function Converter() {
 
   return(
     <>
-      <div >
+      <div className="converter">
+        <h1 className="title">Weight Converter</h1>
         <form
           onSubmit={e => e.preventDefault()}
           noValidate
           autoComplete="off"
+          id="converterForm"
         >
-          <h1 className="title">Weight Converter</h1>
+          <label>Enter pounds:</label>
           <input
             id="standard-number"
             label="Enter pounds"
@@ -92,6 +95,7 @@ export default function Converter() {
             margin="normal"
             className="input-field"
           />
+          <label>Enter grams:</label>
           <input
             id="standard-number"
             label="Enter grams"
@@ -101,6 +105,7 @@ export default function Converter() {
             margin="normal"
             className="input-field"
           />
+          <label>Enter kilograms:</label>
           <input
             id="standard-number"
             label="Enter kilograms"
@@ -110,6 +115,7 @@ export default function Converter() {
             margin="normal"
             className="input-field"
           />
+          <label>Enter ounces:</label>
           <input
             id="standard-number"
             label="Enter ounces"
