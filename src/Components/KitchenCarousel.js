@@ -1,70 +1,42 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { Client } from './Client';
-import {Swiper, SwiperSlide} from 'swiper/react';
-import SwiperCore, {Navigation} from 'swiper';
+import Carousel from 'react-bootstrap/Carousel';
+import Image from 'react-bootstrap/Image';
+import useFetchCards from "../CustomHook/FetchData";
+import Spinner from "./Spinner";
+import { useNavigate } from "react-router-dom";
+import "../Styles/component.css";
 
+export default function MainRecipes() {
+  const { itemCard, isItemLoading } = useFetchCards();
+  const navigate = useNavigate();
 
-SwiperCore.use([Navigation])
+  const handleReadMore = (id) => {
+    navigate(`/singlerecipepage/${id}`);
+  };
 
-export default function KitchenCarousel() {
-  const [loadCarousel, setLoadCarousel] = useState(false);
-  const [carouselSlide, setCarouselSlide] = useState([]);
+  if (isItemLoading) {
+    return <Spinner />;
+  }
 
-  const cleanupCarouselSlide = useCallback((rawData) => {
-    const cleanSlide = rawData.map((slide) => {
-      const { sys, fields } = slide;
-      const { id } = sys;
-      const slideTitle = fields.slide;
-      const slideDescription = fields.description;
-      const slideBackground = fields.image.fields.file.url;
-      const updatedSlide = { id, slideTitle, slideDescription, slideBackground };
-      return updatedSlide;
-    });
-    setCarouselSlide(cleanSlide);
-  }, []);
-
-  const addCarouselSlide = useCallback(async () => {
-    setLoadCarousel(true);
-    try {
-      const response = await Client.getEntries({ content_type: 'recipeCarousel' });
-      const responseData = response.items;
-      if (responseData) {
-        cleanupCarouselSlide(responseData);
-      } else {
-        setCarouselSlide([]);
-      }
-      setLoadCarousel(false);
-    } catch (error) {
-      console.log(error);
-      setLoadCarousel(false);
-    }
-  }, [cleanupCarouselSlide]);
-
-  useEffect(() => {
-    addCarouselSlide();
-  }, []);
-
-  console.log(carouselSlide);
+  const mainCard = itemCard.filter(
+    (item) => item.itemCategory.toLowerCase() === "spot"
+  );
 
   return (
-    <div className='kitchen-carousel'>
-        <Swiper>
-          {carouselSlide.map((item) => {
-          const {id, slideTitle, slideDescription, slideBackground} = item
+    <div className="kitchen-carousel">
+      <Carousel>
+        {mainCard.map((item) => {
+          const { id, itemImage, itemTitle } = item;
           return (
-            <SwiperSlide key={id}>
-                <div className='slide-wrap'  style={{backgroundImage: `url(${slideBackground})`}}>
-                  <div className='text-wrap'>
-                      <h2>{slideTitle}</h2>
-                      <p>{slideDescription}</p>
-                  </div>
-                </div>
-            </SwiperSlide>
-            
-            );
-          })}
-        </Swiper>
-      
+            <Carousel.Item key={id} id="carousel-item">
+              <Image id="carousel-img" src={itemImage} alt={itemTitle} />
+              <Carousel.Caption>
+                <h3>{itemTitle}</h3>
+                <button onClick={() => handleReadMore(id)}>Read More</button>
+              </Carousel.Caption>
+            </Carousel.Item>
+          );
+        })}
+      </Carousel>
     </div>
   );
 }

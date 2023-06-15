@@ -24,7 +24,7 @@ click on 'get started' button, user will access homepage*/
 	line-height: 4rem;
 	height: 4rem;
 	text-align: center;
-	width: 8rem;
+	width: 20rem;
 	cursor: pointer;
 }
 .btn-getstarted span {
@@ -78,43 +78,7 @@ click on 'get started' button, user will access homepage*/
 ROUTE: '/home'
 */
 
-#home {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: flex-end;
-   
-    
-}
 
-
-#carousel {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    width: 55rem;
-    height: 30rem;
-    margin-right: 3rem;
-    background-color: bisque;
-    border-radius: 1rem;
-}
-
-#carousel-items {
-    height: 29rem;
-    width: 45rem;
-}
-.carousel-img {
-    border-radius: 1rem;
-}
-.label {
-    color: var(--dark-is-coffee);
-}
-
-#caption {
-    background-color: #EB672F;
-    height: 10rem;
-}
 
 /*ABOUT PAGE | ROUTE: "/about"*/
 #about {

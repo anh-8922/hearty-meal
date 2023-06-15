@@ -123,31 +123,21 @@ nav a.active {
  }
 
 /*CAROUSEL COMPONENT*/
-.carousel {
-    background-color: aqua;
-    overflow: hidden;
-    width: 80%;
-    margin-right: 3rem;
-}
-.carousel-items {
-    height: 27rem;
-    min-width: 100%;
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-    background-color: yellow;
+.kitchen-carousel {
+    margin: 1rem 2rem 0 0;
+    padding: 1rem;
+    background: whitesmoke;
+    border-width: 5px 3px 3px 5px;
+    border-radius:2% 6% 5% 4% / 1% 1% 2% 4%;
     
 }
-.internal-organ {
-    white-space: nowrap;
-    transition: transform 0.3s;
+#carousel-item {
+   border-radius: 1rem;
 }
-.indicator {
-    display: flex;
-    justify-content: center;
-}
-.indicator > button {
-    margin: 0.5rem
+#carousel-img {
+   width: 50rem;
+   height: 30rem;
+   border-radius: 1rem;
 }
 
 /*RECIPE TABS COMPONENTS*/
