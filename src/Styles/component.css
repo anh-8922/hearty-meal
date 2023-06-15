@@ -8,7 +8,7 @@
     --raisen-black: #231F20;
   }
 
-nav {
+/* nav {
     background-color: var(--orange-like-carrot);
     height: 110dvh;
     width: 23%;
@@ -17,7 +17,20 @@ nav {
     border-right: 5px solid #b1978c;
     border-right-style: groove;
     
-}
+} */
+
+nav {
+    background-color: var(--orange-like-carrot);
+    height: 100vh;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    border-right: 5px solid #b1978c;
+    border-right-style: groove;
+    position: fixed; 
+    overflow-y: auto;
+  }
+  
 
 nav a.active {
     background-color: var(--sweet-like-vanilla);

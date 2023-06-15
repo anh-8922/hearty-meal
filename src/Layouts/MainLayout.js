@@ -7,7 +7,8 @@ import SearchBar from "../Components/SearchBar";
 export default function MainLayout({children}) {
     return(
         <div className="main">
-            <Sidebar/>
+            <div className="left"><Sidebar/></div>
+            
             <div className="side">
                 <div className="heading">
                     <div><SearchBar/></div>
