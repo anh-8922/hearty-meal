@@ -51,7 +51,7 @@ export default function SearchPage() {
           <Spinner />
         </div>
       ) : (
-        <div>
+        <div style={{display:'flex', flexDirection:'column', marginLeft:'8rem',marginRight:'3rem', gap:'4rem'}}>
           {itemCard.map((item, index) => {
             const {fields } = item;
             const itemTitle = fields?.title || '';
@@ -66,6 +66,7 @@ export default function SearchPage() {
                 itemImage={itemImage}
                 itemIngredients={itemIngredients}
                 itemInstructions={itemInstructions}
+                
               />
             );
           })}

@@ -258,9 +258,10 @@ nav a.active {
 }
 
 /*ITEM CARD COMPONENTS*/
-/* Changed background color/ padding /z index ====> LAKMALI */
+/* Changed background color/ padding / ====> LAKMALI */
 .item-card {
-    
+    background-color: #D4C79E;
+    border-radius: 1rem;
 }
 .item-card > h1 {
     margin-bottom: 2rem;
