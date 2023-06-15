@@ -18,12 +18,12 @@ export default function Sidebar() {
             <nav >
                 <div id="logo"><img style={{width: '10rem' }} src={heartlogo} alt='logo'/></div>
                                                                                         
-                <NavLink to="/home"  className='nav-items'><RiHomeSmileLine/>Main Board</NavLink>
-                <NavLink to="/recipe" className="nav-items"><GiSecretBook/>Recipe</NavLink>
+                <NavLink to="/home"  className='nav-items'>Home</NavLink>
+                <NavLink to="/recipe" className="nav-items">Recipe</NavLink>
                 
-                <NavLink to='/tools'  className="nav-items"><RiMentalHealthFill/>Tools</NavLink>   
-                <NavLink to="/about" className="nav-items"><RiFileInfoFill/>About</NavLink>
-                <NavLink to="/contact"  className="nav-items"><RiMailSendFill/>Contact</NavLink>   
+                <NavLink to='/tools'  className="nav-items">Tools</NavLink>   
+                <NavLink to="/about" className="nav-items">About</NavLink>
+                <NavLink to="/contact"  className="nav-items">Contact</NavLink>   
             </nav>
         </>
     )
